@@ -1,0 +1,174 @@
+<html>
+
+<head>
+
+<meta http-equiv="Content-Language" content="pt-br">
+
+		<title>Contato</title>
+				</head>
+				<!-- Começo da funcão hora 
+				-->
+				<SCRIPT language=JavaScript>
+var timeID=null;
+var timerRunning=false;
+function stopclock (){
+        if(timerRunning)               
+				clearTimeout(timerID);
+        timerRunning=false;
+        }
+function startclock (){
+        stopclock ();
+        showtime ();
+        }
+function showtime() {
+        var now=new Date();
+        var hours= now.getHours();
+        var minutes= now.getMinutes();
+        var seconds= now.getSeconds();
+        var timeValue=""+ hours;
+        timeValue += ((minutes<10) ? ":0" : ":") + minutes
+        timeValue += ((seconds<10) ? ":0" : ":") + seconds
+ 
+        document.clock.face.value= timeValue
+        timerID = setTimeout("showtime()",1000);
+        timerRunning = true;
+        }
+        
+</SCRIPT>
+		<!-- Fim da funcão hora 
+				-->
+		<!-- Começo da funcão do formulário 
+				-->		
+<script language = "javascript">
+	function x()
+	{	
+		var c1,c2,c3,c4,c5
+				c1=document.f1.nome.value;
+				c2=document.f1.email.value;
+				c3=document.f1.telefone.value;
+				c4=document.f1.cidade.value;
+				c5=document.f1.mensagem.value;
+			
+					if (c1=="")
+					{
+						alert("Digite um nome por favor")
+						document.f1.nome.focus();
+						return false;
+					}
+					if (c2=="")
+					{	
+						alert("Digite um email válido por favor")
+						document.f1.email.focus();
+						return false;
+					}
+					if (c3=="")
+					{	
+						alert("Digite um telefone válido por favor")
+						document.f1.telefone.focus();
+						return false;
+					}
+					if (c4=="")
+					{	
+						alert("Digite sua cidade/estado")
+						document.f1.cidade.focus();
+						return false;
+					}
+					if (c5=="")
+					{	
+						alert("Deixe uma mensagem ou comentário")
+						document.f1.cidade.focus();
+						return false;
+					}
+					alert("Mensagem enviada com sucesso!")
+					return true
+					
+}	
+		
+</script>			
+		<!-- Função dos campos do contato Fim -->
+
+
+ 
+
+
+<body onload="startclock()"  bgcolor="#DADADA">
+<form name = "clock" onsubmit = "0" "return x()">
+<DIV align="center"><INPUT type=button value="" name=face></DIV>
+</form>
+<form name = "f1" onsubmit = "return x()">
+
+	<embed src="C:\Users\Gustavo\Desktop\My Shared Folder\guns n'roses - don't cry.mp3" width="200" 
+		height="70" autostart="true"> 
+
+
+
+
+
+			<table border="1" cellspacing="0" width="1378" cellpadding="5" height="208" style="border-width: 0; border-collapse:collapse" bordercolor="#111111">
+  				<tr>
+    				<td height="195" style="border-style: none; border-width: medium" width="1366">
+                    <a href="http://home.htm">
+                    <img border="0" src="images/Banner.jpg" width="1371" height="200"></a></td>
+  				</tr>
+			</table>
+                        <table border="1" cellpadding="0" cellspacing="0" style="border-width:0; border-collapse: collapse" bordercolor="#111111" width="100%" bgcolor="#DADADA">
+                          <tr>
+                            <td width="16%" style="border-style: none; border-width: medium" align="center">
+                            <a href="C:\Users\Gustavo\Desktop\Gustavo\NOVO SITE\home.htm">
+                            <img border="0" src="images/home.jpg" align="left" width="200" height="60"></a></td>
+                            <td width="17%" style="border-style: none; border-width: medium" align="center">
+                            <p align="left">
+                            <a href="sobre.htm">
+                            <img border="0" src="images/sobre%20o%20site.jpg" width="220" height="60"></a></td>
+                            <td width="31%" style="border-style: none; border-width: medium" align="center">
+                            <a href="C:\Users\Gustavo\Desktop\Gustavo\NOVO SITE\sobre aerosmith.htm">
+                            <img border="0" src="images/Aerosmith.jpg" width="398" height="60" align="left"></a></td>
+                            <td width="28%" style="border-style: none; border-width: medium" align="center">
+                            <p align="left"><a href="C:\Users\Gustavo\Desktop\Gustavo\NOVO SITE\sobre guns.htm">
+                            <img border="0" src="images/guns.jpg" width="365" height="60"></a></td>
+                            <td width="15%" style="border-style: none; border-width: medium" align="center">
+                            <p align="left">
+                            <a href="contato.htm">
+                            <img border="0" src="images/contato.jpg" width="200" height="60"></a></td>
+               
+                          </tr>
+            </table>
+<table border="1" cellspacing="1" style="border-collapse: collapse; border-width: 0" bordercolor="#111111" width="1382" bgcolor="#ACA9A9" height="315">
+  <tr>
+    <td style="border-style: none; border-width: medium" height="310" align="center" width="1378">
+    <p class="MsoNormal" align="center">
+    <font face="Viner Hand ITC" size="6">ENTRE EM CONTATO CONOSCO<br>
+    </font>
+    <font face="Viner Hand ITC" size="4">Por favor envie seu elogio/crítica ou 
+    sugestões !<br>
+    Sua opinião é muito importante para nós !</font><font face="Vijaya" color="#FFFFFF" size="4"><br>
+&nbsp;</font></p>
+    <center>
+    <table border="1" cellspacing="1" style="border-width:0; border-collapse: collapse" bordercolor="#111111" width="750" height="354">
+      <tr>
+        <td style="border-style: none; border-width: medium" height="349">
+        &nbsp;<p>
+          <font face="Viner Hand ITC" size="5">Nome:</font><font face="Vijaya" size="5" color="#FFFFFF"><br>
+          <input type="text" name="nome" size="38"></font><br>
+          <font face="Viner Hand ITC" size="5">E-Mail:</font><font face="Vijaya" size="5" color="#FFFFFF"><br>
+          <input type="text" name="email" size="38"><br>
+          </font>
+          <font face="Viner Hand ITC" size="5">Telefone:</font><font face="Vijaya" size="5" color="#FFFFFF"><br>
+          <input type="text" name="telefone" size="38"><br>
+          </font>
+          <font face="Viner Hand ITC" size="5">Cidade/Estado:</font><font face="Vijaya" size="5" color="#FFFFFF"><br>
+          <input type="text" name="cidade" size="38"><br>
+          </font>
+          <font face="Viner Hand ITC" size="5">Mensagem:</font><font face="Vijaya" size="5" color="#FFFFFF"><br>
+          <textarea rows="11" name="mensagem" cols="59"></textarea></font></p>
+        </td>
+      </tr>
+    </table>
+    <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type = "submit" value = "Enviar">   </td>
+  </tr>
+</table>			
+
+</body>
+
+</html>
